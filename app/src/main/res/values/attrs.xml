@@ -5,7 +5,6 @@
         <attr name="min" format="integer"/>
         <attr name="step" format="integer"/>
         <attr name="defaultValue" format="integer"/>
-        <attr name="disable" format="boolean"/>
         <attr name="btnBackground" format="reference"/>
     </declare-styleable>
 </resources>

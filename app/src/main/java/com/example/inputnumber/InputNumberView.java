@@ -22,7 +22,6 @@ public class InputNumberView extends LinearLayout {
     private int min;
     private int defaultValue;
     private int step ;
-    private boolean disable;
     private int btnBackground;
     private LinearLayout llInputNumber;
 
@@ -48,7 +47,6 @@ public class InputNumberView extends LinearLayout {
         min = a.getInt(R.styleable.InputNumberView_min, 0);
         defaultValue = a.getInt(R.styleable.InputNumberView_defaultValue, 0);
         step = a.getInt(R.styleable.InputNumberView_step, 1);
-        disable = a.getBoolean(R.styleable.InputNumberView_disable, true);
         btnBackground = a.getResourceId(R.styleable.InputNumberView_btnBackground, -1);
         a.recycle();
     }
@@ -111,14 +109,6 @@ public class InputNumberView extends LinearLayout {
         this.step = step;
     }
 
-    public boolean isDisable() {
-        return disable;
-    }
-
-    public void setDisable(boolean disable) {
-        this.disable = disable;
-        llInputNumber.setClickable(disable);
-    }
 
     public int getBtnBackground() {
         return btnBackground;
