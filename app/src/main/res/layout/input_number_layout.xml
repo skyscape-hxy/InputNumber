@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/ll_input_number"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_subtract"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_left_selector"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_num_bg"
+        android:gravity="center"
+        android:textSize="14sp"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_right_selector"
+        android:text="+"
+        android:textSize="18sp" />
+</LinearLayout>
